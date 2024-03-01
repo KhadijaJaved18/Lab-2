@@ -81,9 +81,18 @@ def run_game_rounds(categories):
     Returns: None
     """
     #------------------------
-    # Add your code here
+    import random
+    categories=["History","Science","English","Korean","Computer"]
+    for number in range(1,6):
+        selected_category=random.choice(categories)
+    print(f"\n Round {number}, Category-{categories}")
+
+    user_input=input("Enter your answer:")
+    print("\n Game over! Thanks for playing")
+
+
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+  
     #------------------------
 
 #---------------------------------------
