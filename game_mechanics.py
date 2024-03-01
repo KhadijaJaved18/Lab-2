@@ -110,19 +110,6 @@ def validate_answer(player_answer, correct_answer):
 def validate_answer(player_answer, correct_answer):
     return player_answer.lower() == correct_answer.lower()
 
-def game():
-    question = "How many alphabets are there in the english language?"
-    correct_answer = "26"
-
-
-    player_answer = input(f"{question} ")
-
-    if validate_answer(player_answer, correct_answer):
-        print("Congratulations! Your answer is correct.")
-    else:
-        print(f"Sorry, the correct answer is {correct_answer}.")
-
-
     #------------------------
 
 #---------------------------------------
