@@ -87,8 +87,6 @@ def run_game_rounds(categories):
         selected_category=random.choice(categories)
     print(f"\n Round {number}, Category-{categories}")
 
-    user_input=input("Enter your answer:")
-    print("\n Game over! Thanks for playing")
 
 
     #------------------------
@@ -109,9 +107,22 @@ def validate_answer(player_answer, correct_answer):
     - bool: True if the player's answer is correct, False otherwise.
     """
     #------------------------
-    # Add your code here
-    #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+def validate_answer(player_answer, correct_answer):
+    return player_answer.lower() == correct_answer.lower()
+
+def game():
+    question = "How many alphabets are there in the english language?"
+    correct_answer = "26"
+
+
+    player_answer = input(f"{question} ")
+
+    if validate_answer(player_answer, correct_answer):
+        print("Congratulations! Your answer is correct.")
+    else:
+        print(f"Sorry, the correct answer is {correct_answer}.")
+
+
     #------------------------
 
 #---------------------------------------
